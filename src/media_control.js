@@ -6,18 +6,10 @@
  * The MediaControl is responsible for displaying the Player controls.
  */
 
-import {Config, Fullscreen, formatTime, extend, removeArrayItem} from 'base/utils'
+import {Events, Styler, UIObject, Browser, Mediator,Playback, Utils, template, $} from 'Clappr'
+const {Config, Fullscreen, formatTime, extend, removeArrayItem} = Utils
+
 import {Kibo} from 'vendor'
-
-import Events from 'base/events'
-import Styler from 'base/styler'
-import UIObject from 'base/ui_object'
-import Browser from 'components/browser'
-import Mediator from 'components/mediator'
-import template from 'base/template'
-import Playback from 'base/playback'
-
-import $ from 'clappr-zepto'
 import merge from 'lodash.merge'
 
 import mediaControlStyle from './public/media-control.scss'
